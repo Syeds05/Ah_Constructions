@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <nav id="navi1">
+        <h1>AH_Constructions</h1>
+        <a href="./index.html">Home</a>
+        <a href="./Projects.html">Projects</a>
+        <a href="./Services.html">Services</a>
+        <a href="./Gallary.html">Gallary</a>
+        <a href="./Blog.html">Blog</a>  
+        <a href="./About.html">About</a> 
+        <a href="./Contact.html">Contact</a>  
+    </nav>
+    <div class="container" style="padding:40px;">
+    <h2 style="text-align:center;">Our Gallery</h2>
+    <p style="text-align:center;">
+        Explore some of our completed and ongoing construction projects.
+    </p>
+
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:30px;">
+
+        <img src="./images/" alt="Project 1"
+             style="width:300px; height:200px; object-fit:cover; border-radius:8px;">
+
+        <img src="{% static 'images/image2.jpeg' %}" alt="Project 2"
+             style="width:300px; height:200px; object-fit:cover; border-radius:8px;">
+
+        <img src="{% static 'images/image3.jpeg' %}" alt="Project 3"
+             style="width:300px; height:200px; object-fit:cover; border-radius:8px;">
+
+        <img src="{% static 'images/image4.jpeg' %}" alt="Project 4"
+             style="width:300px; height:200px; object-fit:cover; border-radius:8px;">
+
+        <img src="{% static 'images/image5.jpeg' %}" alt="Project 5"
+             style="width:300px; height:200px; object-fit:cover; border-radius:8px;">
+
+        <img src="{% static 'images/image1.jpeg' %}" alt="Project 6"
+             style="width:300px; height:200px; object-fit:cover; border-radius:8px;">
+
+    </div>
+</div>
+</body>
+</html>

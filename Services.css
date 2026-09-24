@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, red, yellow, orange);
+}
+
+#section1 {
+    width: 100%;
+    height: auto;
+}
+
+/* image */
+#img1 {
+    width: 100%;
+    height: clamp(200px, 35vw, 400px);
+    object-fit: contain;
+    display: block;
+}
+
+/* our services */
+#main1 {
+    width: 100%;
+    height: auto;
+}
+
+#services {
+    width: 100%;
+    height: auto;
+}
+
+#title {
+    width: 100%;
+    text-align: center;
+    font-size: clamp(24px, 3vw, 32px);
+    color: #333;
+    margin-top: 0;
+    padding-top: clamp(10px, 2vw, 20px);
+}
+
+#main {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(15px, 2vw, 30px);
+    margin: 0 auto;
+}
+
+#tag1,
+#tag2,
+#tag3,
+#tag4 {
+    width: clamp(220px, 20%, 300px);
+    height: clamp(350px, 30vw, 400px);
+    background: white;
+    padding: clamp(10px, 1.5vw, 15px);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: clamp(15px, 2vw, 30px);
+}
+
+#im1 {
+    width: 100%;
+    max-width: 280px;
+    height: clamp(150px, 15vw, 200px);
+    object-fit: cover;
+}
+
+#p1 {
+    font-size: clamp(12px, 1.2vw, 16px);
+    padding-right: clamp(10px, 3vw, 50px);
+}
+
+ul {
+    margin: 0;
+    padding-left: clamp(15px, 2vw, 20px);
+}
+
+li {
+    margin: clamp(3px, 0.5vw, 5px) 0;
+    padding: 0;
+    font-size: clamp(12px, 1.2vw, 15px);
+}
+
+h3 {
+    color: blue;
+    font-size: clamp(16px, 2vw, 22px);
+}
