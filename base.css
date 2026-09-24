@@ -1,34 +1,38 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: white;
+    width: 100%;
+    overflow-x: hidden;
 }
 
-#navi1{
+#navi1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: orange;
     color: white;
-    height: 4.63vh;
-    text-decoration:none;
-    object-fit: cover;
-    
-    
+    min-height: 50px;
+    padding: 5px 10px;
+}
+
+#navi1 h1 {
+    white-space: nowrap;
 }
 
 a {
     text-decoration: none;
     font-size: 20px;
     color: black;
-    
+    white-space: nowrap;
 }
 
 .slider {
-    width: 100vw;
+    width: 100%;
     text-align: center;
 }
 
@@ -40,21 +44,81 @@ a {
 }
 
 .dots {
-    margin-top: 0.93vh;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .dots span {
     font-size: 20px;
     cursor: pointer;
-    margin: 0.98vh;
+    margin: 0 5px;
 }
 
-header{
-    background:#f58804;
-    color:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+header {
+    background: #f58804;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 2vw;
-    height: 5vh;
+    min-height: 50px;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    #navi1 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 18px;
+        padding: 8px;
+        min-height: auto;
+    }
+
+    #navi1 h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    #navi1 a {
+        font-size: 17px;
+    }
+
+    .slider img {
+        height: 40vh;
+    }
+
+    header {
+        height: auto;
+        padding: 15px;
+    }
+}
+
+
+/* =========================
+   SMALL PHONE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    #navi1 {
+        gap: 7px 12px;
+    }
+
+    #navi1 h1 {
+        font-size: 23px;
+    }
+
+    #navi1 a {
+        font-size: 15px;
+    }
+
+    .slider img {
+        height: 30vh;
+    }
 }
