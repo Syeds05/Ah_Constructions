@@ -20,7 +20,7 @@
     <div>
 <div class="slider">
 
-    <img id="sliderImage" src="{% static 'images/image1.jpeg' %}" alt="Image">
+    <img id="sliderImage" src="./images/home/image1.jpeg" alt="Image">
 
     <div class="dots">
         <span onclick="showImage(0)">●</span>
@@ -32,10 +32,10 @@
 
 <script>
     let images = [
-        "./images/image1.jpeg",
-        "./images/image2.jpeg",
-        "./images/image3.jpeg",
-        "./images/image4.jpeg",
+        "../images/home/image1.jpeg",
+        "./images/home/image2.jpeg",
+        "./images/home/image3.jpeg",
+        "./images/home/image4.jpeg",
     ];
 
     let current = 0;
